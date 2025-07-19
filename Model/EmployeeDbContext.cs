@@ -8,5 +8,7 @@ namespace Employee.API.Model
         {
         }
 
+        public DbSet<Employee> Employees { get; set; }
+
     }
 }
