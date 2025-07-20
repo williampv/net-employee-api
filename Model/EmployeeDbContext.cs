@@ -4,15 +4,10 @@ namespace Employee.API.Model
 {
     public class EmployeeDbContext : DbContext
     {
-        public EmployeeDbContext() { }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer("EmployeeDatabase");
-        }
         public EmployeeDbContext(DbContextOptions<EmployeeDbContext> options) : base(options)
         {
         }
-        public DbSet<Employee> Employees { get; set; }
+        public DbSet<EmployeeData> EmployeeData { get; set; }
 
     }
 
