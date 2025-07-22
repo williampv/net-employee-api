@@ -17,10 +17,10 @@ namespace Employee.API.Model
         [Required]
         [MaxLength(50)]
         public string email { get; set; }
-        public string contactNo { get; set; }
         [Required]
         [MaxLength(10)]
         [MinLength(10)]
+        public string contactNo { get; set; }
         public string city { get; set; }
         public string address { get; set; }
 
